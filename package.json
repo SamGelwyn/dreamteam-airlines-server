@@ -1,4 +1,5 @@
 {
   "name": "dreamteam-airlines-server",
-  "private": true
+  "private": true,
+  "dependencies": {}
 }
