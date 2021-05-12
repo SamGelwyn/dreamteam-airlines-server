@@ -64,6 +64,6 @@ class ReservationsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def reservation_params
-      params.require(:reservation).permit(:seat_id, :flight_id, :user_id)
+      params.require(:reservation).permit(:seat, :flight_id, :user_id)
     end
 end
