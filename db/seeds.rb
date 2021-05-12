@@ -12,15 +12,15 @@ u1 = User.create :name => "Joel Turnbull", :email => "joel@ga.co", :password => 
 u2 = User.create :name => "Sam Gelwyn", :email => "sam@ga.co", :password => "chicken"
 puts "#{ User.count } users created."
 
-Flight.destroy_all
-f1 = Flight.create :number => 13, :origin => 'Sydney', :destination => 'Perth', :date => "2021/05//12"
-f2 = Flight.create :number => 182, :origin => 'Brisbane', :destination => 'Melbourne', :date => "2021/05/19"
-puts "#{ Flight.count } flights created."
-
 Plane.destroy_all
 p1 = Plane.create :name => "Boeing 737", :rows => 100, :columns => 6
 p2 = Plane.create :name => "Airbus A320", :rows => 110, :columns => 6
 puts "#{ Plane.count } planes created."
+
+Flight.destroy_all
+f1 = Flight.create :number => 13, :origin => 'Sydney', :destination => 'Perth', :date => "2021/05/12"
+f2 = Flight.create :number => 182, :origin => 'Brisbane', :destination => 'Melbourne', :date => "2021/05/19"
+puts "#{ Flight.count } flights created."
 
 Reservation.destroy_all
 r1 = Reservation.create :seat => "1A"
