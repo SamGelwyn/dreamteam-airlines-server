@@ -13,8 +13,8 @@ u2 = User.create :name => "Sam Gelwyn", :email => "sam@ga.co", :password => "chi
 puts "#{ User.count } users created."
 
 Plane.destroy_all
-p1 = Plane.create :name => "Boeing 737", :rows => 100, :columns => 6
-p2 = Plane.create :name => "Airbus A320", :rows => 110, :columns => 6
+p1 = Plane.create :name => "Boeing 737", :rows => 36, :columns => 6
+p2 = Plane.create :name => "Airbus A320", :rows => 33, :columns => 6
 puts "#{ Plane.count } planes created."
 
 Flight.destroy_all
