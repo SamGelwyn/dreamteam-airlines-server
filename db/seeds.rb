@@ -23,8 +23,8 @@ f2 = Flight.create :number => 182, :origin => 'Brisbane', :destination => 'Melbo
 puts "#{ Flight.count } flights created."
 
 Reservation.destroy_all
-r1 = Reservation.create :seat => "1A"
-r2 = Reservation.create :seat => "3D"
+r1 = Reservation.create :seat => "A1"
+r2 = Reservation.create :seat => "D3"
 puts "#{ Reservation.count } reservations created."
 
 #Associations
