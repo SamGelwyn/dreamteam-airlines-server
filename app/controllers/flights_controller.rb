@@ -4,6 +4,8 @@ class FlightsController < ApplicationController
   # GET /flights or /flights.json
   def index
     @flights = Flight.all
+    @flights_sorted = Flight.all.sort_by { |f| f.date }
+    @flights_sorted_rev = @flights_sorted.reverse
   end
 
   # GET /flights/1 or /flights/1.json
